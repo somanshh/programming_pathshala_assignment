@@ -3,10 +3,9 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const Header = () => (
-  <header className="flex justify-between items-center py-6 px-12">
+  <header className="flex justify-between items-center py-6 px-32">
     <div className="flex items-center">
       <svg className="w-8 h-8 text-green-500" viewBox="0 0 24 24">
-        {/* Add your logo SVG path here */}
         <image href="/Images/icon.png" x="0" y="0" height="24" width="24"/>
       </svg>
       <span className="ml-2 text-3xl font-semibold">Nexcent</span>
@@ -49,7 +48,6 @@ const CarouselItem = ({ title, subtitle, isActive }) => (
         </div>
         <div className="relative pt-12 pr-44">
           <img src={`/Images/Illustration${isActive ? 'active' : 'inactive'}.png`} alt="Illustration" className="w-96" />
-          {/* <image  href="/Images/Illustration.png" x="0" y="0" height="24" width="24"/> */}
         </div>
       </div>
     </div>
@@ -83,7 +81,7 @@ const CarouselItem = ({ title, subtitle, isActive }) => (
   }
   
   const HomePage = () => (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-96 bg-gray-200">
       <Header />
       <Hero />
     </div>
