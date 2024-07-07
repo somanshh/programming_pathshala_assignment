@@ -9,7 +9,7 @@ const AchievementsSection = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-10">
+    <section className="bg-gray-100 py-10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between items-start">
           <div className="lg:w-1/3 mt-6 ml-6 lg:mb-0 font-semibold tracking-normal ">
