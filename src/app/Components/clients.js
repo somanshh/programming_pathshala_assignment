@@ -6,11 +6,11 @@ const ClientLogo = ({ src, alt }) => (
   );
    
   const FeatureCard = ({ icon, title, description }) => (
-    <div className="flex flex-col items-center text-center shadow-sm border-spacing-0 p-4 max-w-72 min-h-52">
-      <div className="bg-green-100 p-4 rounded-full mb-4">
-        <img src={icon} alt="" className="w-8 h-8" />
+    <div className="flex flex-col items-center text-center shadow-sm border-spacing-1 p-4 max-w-72 min-h-52">
+      <div className="  p-4 rounded-full mb-4">
+        <img src={icon} alt="" className="w-16 h-16" />
       </div>
-      <h3 className="text-3xl tracking-normal	font-semibold mb-2">{title}</h3>
+      <h3 className="text-3xl tracking-normal	font-bold mb-2 text-gray-700">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
   );
@@ -22,7 +22,7 @@ const ClientLogo = ({ src, alt }) => (
         <p className="text-center text-gray-600 mb-8">We have been working with some Fortune 500+ clients</p>
         
         <div className="flex justify-between items-center mb-16">
-          {['logo1.svg', 'logo2.svg', 'logo3.svg', 'logo4.svg', 'logo5.svg', 'logo6.svg', 'logo7.svg'].map((logo, index) => (
+          {['/Images/clients/Logo1.png', '/Images/clients/Logo2.png', '/Images/clients/Logo3.png', '/Images/clients/Logo4.png', '/Images/clients/Logo5.png', '/Images/clients/Logo6.png', '/Images/clients/Logo7.png'].map((logo, index) => (
             <ClientLogo key={index} src={logo} alt={`Client ${index + 1}`} />
           ))}
         </div>
@@ -34,18 +34,18 @@ const ClientLogo = ({ src, alt }) => (
         </div>
   
         <div className="flex justify-between ">
-          <FeatureCard className="border-opacity-85 shadow"
-            icon="/icon-membership.svg"
+          <FeatureCard className=""
+            icon="/Images/community/icon1.png"
             title="Membership Organisations"
             description="Our membership management software provides full automation of membership renewals and payments"
           />
           <FeatureCard
-            icon="/icon-associations.svg"
+            icon="/Images/community/icon2.png"
             title="National Associations"
             description="Our membership management software provides full automation of membership renewals and payments"
           />
           <FeatureCard
-            icon="/icon-clubs.svg"
+            icon="/Images/community/icon3.png"
             title="Clubs And Groups"
             description="Our membership management software provides full automation of membership renewals and payments"
           />
