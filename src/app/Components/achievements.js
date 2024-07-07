@@ -2,10 +2,10 @@ import React from 'react';
 
 const AchievementsSection = () => {
   const metrics = [
-    { icon: "👥", value: "2,245,341", label: "Members" },
-    { icon: "🚲", value: "46,328", label: "Clubs" },
-    { icon: "🎉", value: "828,867", label: "Event Bookings" },
-    { icon: "💳", value: "1,926,436", label: "Payments" }
+    { icon: "images/achievements/icon1.png", value: "2,245,341", label: "Members" },
+    { icon: "images/achievements/icon2.png", value: "46,328", label: "Clubs" },
+    { icon: "images/achievements/icon3.png", value: "828,867", label: "Event Bookings" },
+    { icon: "images/achievements/icon4.png", value: "1,926,436", label: "Payments" }
   ];
 
   return (
@@ -23,7 +23,13 @@ const AchievementsSection = () => {
             {metrics.map((metric, index) => (
                 <div>
                     <div className="flex items-center mb-1">
-                      <div className="text-green-500 text-5xl mr-2">{metric.icon}</div>
+                      <div className="text-green-500 text-5xl mr-2">{
+                        <img
+                        src={metric.icon}
+                        alt={'icon1'}
+                        className=""
+                      />
+                        }</div>
                       <div key={index} className="flex flex-col">
                           <span className="text-3xl font-bold">{metric.value}</span>
                           <span className="text-gray-500 text-sm">{metric.label}</span>
