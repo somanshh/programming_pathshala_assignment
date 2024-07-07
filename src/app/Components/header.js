@@ -81,7 +81,7 @@ const CarouselItem = ({ title, subtitle, isActive }) => (
   }
   
   const HomePage = () => (
-    <div className="min-h-96 bg-gray-200">
+    <div className="min-h-96 bg-gray-100">
       <Header />
       <Hero />
     </div>
